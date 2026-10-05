@@ -3,74 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Alex Daniel Nobza - Portafolio</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <header class="header">
+     <header class="header">
+      <img 
+          src="./images/foto de perfil Alex.png" 
+          alt="fotoperfil" 
+          class="header__avatar" 
+        />
+        <div class="header__content">
+      <h1 class="header__title">Alex <span class="header__title-span">Nobza</span></h1>
+      <p class="header__languages">Desarrollador Full-Stack Junior | TypeScript, React, Node.js</p>
+      <p class="header__description">
+            Desarrollador web junior con experiencia práctica creando interfaces limpias y responsive con HTML, CSS, JavaScript y React, así como la implementación lógica básica de back-end. He trabajado en proyectos formativos que siguen procesos reales de desarrollo, usando Git, GitHub y Figma. Disfruto trabajar en equipo, mantener un código claro, ordenado y listo para proveer soluciones de forma estructurada. Motivado por seguir aprendiendo, afrontar nuevos retos y tomar ventaja de nuevas oportunidades para crecer como desarrollador.</p>
       <nav class="nav">
-        <div class="logo">MiPortfolio</div>
-        <ul class="nav-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+        <ul class="nav__links">
+            <li><a href="#Alex_Nobzacv" class="nav__link">Descargar CV</a></li>
+            <li><a href="#Git_hub" class="nav__link">Enlace a GitHub</a></li>
+            <li><a href="#contacto" class="nav__link">Hablemos</a></li>
         </ul>
-      </nav>
+      </div>
+       
+        </div>
+      </section>
+
     </header>
 
-    <main>
-      <section id="inicio" class="hero">
-        <div class="hero-text">
-          <p class="eyebrow">Hola, soy</p>
-          <h1>Tu Nombre</h1>
-          <h2>Desarrollador Web</h2>
-          <p>
-            Creo experiencias digitales modernas, funcionales y con buen diseño.
-          </p>
-          <div class="buttons">
-            <a href="#proyectos" class="btn primary">Ver proyectos</a>
-            <a href="#contacto" class="btn secondary">Contáctame</a>
+    <main class="content">
+           
+      <section id="habilidades" class="skills">
+        <h2 class="portfolio__title">Habilidades y Herramientas</h2>
+      <div class="skills__images">
+        <img class="skill__image" src="./images/html5.svg" alt="HTML5"><img class="skill__image" src="./images/css3.svg" alt="CSS3"><img class="skill__image" src="./images/javascript.svg" alt="JavaScript"><img class="skill__image" src="./images/git.svg" alt="git"><img class="skill__image" src="./images/git-hub.svg" alt="git_hub"><img class="skill__image" src="./images/chatgpt.svg" alt="chatgpt">
+      </div>
+      </section>
+      
+      <section id="proyectos" class="portfolio">
+        <h2 class="portfolio__title">Proyectos Destacados</h2>
+        
+        <div class="cards__container">
+        <div class="card">
+          <div class="card__image-container">
+            <img src="./images/cofee_shop.png" alt="Proyecto Cafetería" class="card__image"/>
+            <div class="card__image-icons">
+              <img src="./images/html5.svg" alt="HTML5" class="card__image-icon"/>
+              <img src="./images/css3.svg" alt="CSS3" class="card__image-icon"/>
+            </div>
+            <div class="card__image-overlay">
+              </div>
           </div>
+           <div class="card__text-container">
+            <h2>Pagina web de una cafetería</h2>
+            <p>Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de diseño. Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un formulario de contacto funcional.Logro: Implementé desde cero el diseño completo de la página, organicé el proyecto con buenas prácticas y publiqué la versión final utilizando GitHub Pages.</p>
+            <ul class="card__links">
+             <li><a href="#" class="card__link"><img src="./images/share.svg">Descargar CV</a></li>
+             <li><a href="#" class="card__link"><img src="./images/github.svg">Enlace a GitHub</a></li>
+            </ul>
+           </div>
         </div>
-      </section>
-
-      <section id="sobre-mi" class="section">
-        <h3>Sobre mí</h3>
-        <p>
-          Soy una persona apasionada por la tecnología, el diseño y la creación de
-          soluciones útiles para las personas. Me gusta aprender cada día y llevar
-          ideas a la web con atención al detalle.
-        </p>
-      </section>
-
-      <section id="proyectos" class="section">
-        <h3>Proyectos</h3>
-        <div class="projects">
-          <article class="project-card">
-            <h4>Proyecto 1</h4>
-            <p>Descripción breve del proyecto realizado.</p>
-          </article>
-          <article class="project-card">
-            <h4>Proyecto 2</h4>
-            <p>Descripción breve del proyecto realizado.</p>
-          </article>
-          <article class="project-card">
-            <h4>Proyecto 3</h4>
-            <p>Descripción breve del proyecto realizado.</p>
-          </article>
+        <div class="card">
+          <div class="card__image-container">
+            <img src="./images/Rectangle 5.png" alt="Proyecto Nuevo" class="card__image"/>
+            <div class="card__image-icons">
+              <img src="./images/javascript.svg" alt="JavaScript" class="card__image-icon"/>
+              <img src="./images/react.svg" alt="React" class="card__image-icon"/>
+            </div>
+            <div class="card__image-overlay">
+              </div>
+          </div>
+           <div class="card__text-container">
+            <h2>Mi proyecto</h2>
+            <p>Descripcion proyecto</p>
+            <ul class="card__links">
+            <li><a href="#" class="card__link"><img src="./images/share.svg">Descargar CV</a></li>
+            <li><a href="#" class="card__link"><img src="./images/github.svg">Enlace a GitHub</a></li>
+           </ul>    
+           </div>
+            
         </div>
-      </section>
-
-      <section id="contacto" class="section contact">
-        <h3>Contacto</h3>
-        <p>Email: tuemail@example.com</p>
-        <p>LinkedIn: /tu-perfil</p>
+        </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>© 2026 MiPortfolio. Todos los derechos reservados.</p>
+    
+    <footer class="footer" id="contacto">
+      <h2 class="footer__title">Contacto</h2>
+      
+      <ul class="footer__social-list">
+        <li>
+          <a href="mailto:canoda26@hotmail.com" class="footer__social-link">Email: canoda26@hotmail.com</a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/tu-perfil" class="footer__social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </li>
+      </ul>
+      <p class="footer__copyright">© 2026 Alex Daniel Nobza</p>
     </footer>
   </body>
 </html>

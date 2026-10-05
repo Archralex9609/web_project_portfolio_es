@@ -1,0 +1,58 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("main.css");
+
+@font-face {
+  font-family: "Archivo Black";
+  src:
+    url("../fonts/ArchivoBlack-Regular.woff2") format("woff2"),
+    url("../fonts/ArchivoBlack-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+:root {
+  
+  --accent-color: #FF0051; 
+  --bg-color: #121212;
+  --text-color: #FFFFFF;
+  --secondary-text: #A0A0A0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+  position: relative;
+  min-height: 100vh;
+  background-image: 
+    radial-gradient(circle at calc(50% - 300px) 200px, rgba(255, 109, 109, 0.25) 0%, transparent 60%),
+    radial-gradient(circle at calc(50% + 300px) 500px, rgba(255, 61, 61, 0.2) 0%, transparent 60%);
+  background-repeat: no-repeat;
+}
+
